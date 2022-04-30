@@ -1,12 +1,12 @@
 import './App.css';
 import { AddTask } from './AddTask';
 import { ListTasks } from './ListTasks';
+import { Header } from './Header';
 
 function App() {
   return (
     <div>
-      <h1>Tachometer</h1>
-      <p>Measure your task-completion velocity.</p>
+      <Header />
       <ListTasks />
       <AddTask />
     </div>
