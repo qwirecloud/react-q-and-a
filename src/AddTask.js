@@ -1,5 +1,6 @@
 import { useAtom } from "jotai";
 import { tasksAtom } from "./atoms";
+import { Button } from "./Button";
 
 export const AddTask = () => {
   const [tasks, setTasks] = useAtom(tasksAtom);
@@ -19,9 +20,7 @@ export const AddTask = () => {
       <div>
         <label>New Task:</label>
         <input name="taskTitleField" type="text" maxLength={30} />
-        <button name="createTaskButton" type="submit">
-          Create
-        </button>
+        <Button description="Create" type="submit" />
       </div>
     </form>
   );
