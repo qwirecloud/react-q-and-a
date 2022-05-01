@@ -4,10 +4,12 @@ import { Header } from "./Header";
 
 function App() {
   return (
-    <div className="p-5">
-      <Header />
-      <ListTasks />
-      <AddTask />
+    <div className="bg-gray-400 h-full">
+      <div className="container mx-auto py-5 flex flex-col gap-5">
+        <Header />
+        <AddTask />
+        <ListTasks />
+      </div>
     </div>
   );
 }

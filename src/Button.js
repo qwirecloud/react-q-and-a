@@ -1,7 +1,7 @@
 export const Button = ({ description, action, type }) => {
   return (
     <button
-      className="rounded-md py-2 px-4 bg-cyan-800 text-white"
+      className="rounded-md py-2 px-4 bg-gray-700 text-white"
       onClick={action}
       type={type}
     >
