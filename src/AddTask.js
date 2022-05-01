@@ -25,7 +25,7 @@ export const AddTask = () => {
         resetField("taskTitle");
       })}
     >
-      <div className="flex flex-col gap-2 bg-gray-200 text-white p-5 rounded-md drop-shadow-lg">
+      <div className="flex flex-col gap-2 bg-gray-200 text-white p-4 rounded-md drop-shadow-lg">
         <h2 className="text-lg text-gray-800">New Task</h2>
         <div className="flex gap-3">
           <Input
@@ -33,7 +33,7 @@ export const AddTask = () => {
             placeholder="Type your task here"
             register={register}
           />
-          <Button description="Create" type="submit" />
+          <Button type="submit">Create</Button>
         </div>
       </div>
     </form>
