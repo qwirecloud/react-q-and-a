@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Frontend Hands-On Activity
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the hands-on activity that the frontend candidate will do as part of the interview process for qwire. The goal of this activity is to evaluate the skills of the candidate by giving them a Pull Request, submitted by an imaginary junior frontend, so they can review the PR and provide guidance for this fellow developer.
 
-## Available Scripts
+## Context
 
-In the project directory, you can run:
+Imagine you are working on a technical leadership position, or at least a very senior position, as a frontend developer on a company that, among other things, provides a task management system called Tachometer. You are not an integral member of the team that supports Tachometer but, Joana, the technical leader of the Tachometer team is going on vacation and asked you to help with the junior developer she have been mentoring.
 
-### `npm start`
+One day, you get to your desk and you get the following message from this junior developer:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+> Hey mate, [I have been working on this PR](https://github.com/brunokrebs/react-q-and-a/pull/1) for the last couple of weeks and now I think it is ready to ship. As Joana is still on vacation for a few days, I would like to know if you could review it for me so we can ship as soon as possible. There are a few features I'm shipping there. I tried to describe them on the PR description. Please, let me know your thoughts. Thanks!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Now, it is your turn to help shape the career of this young developer. Let's see how you can help them!
 
-### `npm test`
+## Tips
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> Give a man a fish and you feed him for a day. Teach a man to fish and you feed him for a lifetime.
 
-### `npm run build`
+In other words, "install this library" is usually a bad tip as you don't teach the developer the problem they are facing/shipping.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Running the Projects
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+You don't really need to run the projects to review their PR, but if you are insterested, you can do the following:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone this repo
+2. `npm install` from the project root
+3. `npm start`
 
-### `npm run eject`
+Then, you will have to do a similar thing for the backend project that supports this React app:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. [Clone the backend API](https://github.com/brunokrebs/node-q-and-a)
+2. `npm install` from the project root
+3. `npm start` from there
