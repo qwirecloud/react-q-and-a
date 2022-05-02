@@ -1,18 +1,16 @@
-import { useAtom } from "jotai";
-
-import { tasksAtom } from "./atoms";
+import { useTasksQuery } from "./api/api.hooks";
 import { Task } from "./Task";
 
 export const ListTasks = () => {
-  const [tasks, setTasks] = useAtom(tasksAtom);
+  const { data: tasks } = useTasksQuery();
 
-  const deleteTask = (key) => {
-    setTasks(tasks.filter((task) => task.key !== key));
+  const deleteTask = () => {
+    // setTasks(tasks.filter((task) => task.key !== key));
   };
 
   return (
     <ul className="flex flex-col gap-4">
-      {tasks.map((task) => (
+      {tasks?.map((task) => (
         <li key={task.key}>
           <Task task={task} deleteTask={deleteTask} />
         </li>

@@ -1,0 +1,13 @@
+import axios from "axios";
+
+const axiosClient = axios.create({
+  baseURL: "http://localhost:3001",
+});
+
+export const insertTask = (task) => {
+  return axiosClient.post("/", task);
+};
+
+export const getTasks = () => {
+  return axiosClient.get("/");
+};
