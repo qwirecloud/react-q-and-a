@@ -11,3 +11,7 @@ export const insertTask = (task) => {
 export const getTasks = () => {
   return axiosClient.get("/");
 };
+
+export const deleteTask = (task) => {
+  return axiosClient.delete(`/${task._id}`);
+};

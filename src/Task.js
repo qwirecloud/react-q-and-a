@@ -12,7 +12,7 @@ export const Task = ({ task, deleteTask }) => {
       <div className="flex items-stretch">
         <Button
           action={() => {
-            deleteTask(task.key);
+            deleteTask(task);
           }}
         >
           <FaTrashAlt />
