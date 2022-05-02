@@ -1,12 +1,11 @@
-import { useAtom } from "jotai";
-import { tasksAtom } from "./atoms";
+import { useTasksCount } from "./api/api.hooks";
 
 export const Profile = () => {
-  const [tasks] = useAtom(tasksAtom);
+  const { data: tasksCount } = useTasksCount();
   return (
     <div className="flex flex-col justify-end">
       <p>Hello, user.</p>
-      <small>You have {tasks.length} tasks open.</small>
+      <small>You have {tasksCount} tasks open.</small>
     </div>
   );
 };
