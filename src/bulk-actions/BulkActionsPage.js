@@ -20,7 +20,7 @@ export function BulkActionsPage() {
   useEffect(() => {
     const selectedAmount = items.filter((item) => item.selected).length;
     setItemsSelected(selectedAmount);
-  }, [items]);
+  }, [items, itemsSelected]);
 
   const handleToggleSelect = (id) => {
     const newItems = items.map((item) => {
